@@ -1,0 +1,16 @@
+.topnav{
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
+
+}
+.botnav {
+    background-color:gray;
+}
+
+.imgbutton {
+    width:80;
+    height:80;
+}
+.resultbtn {
+    width:100px;
+    height:100px;
+}
