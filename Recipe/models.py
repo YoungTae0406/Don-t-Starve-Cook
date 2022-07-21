@@ -9,7 +9,6 @@ class cookResult(models.Model):
     img = models.ImageField(null=True, upload_to="", blank=True)
 
 
-
 class meatIngredient(models.Model):
     name = models.CharField(max_length=30)
     size = models.IntegerField(default = 0)

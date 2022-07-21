@@ -6,11 +6,14 @@
     background-color:gray;
 }
 
-.imgbutton {
+.ingbutton {
     width:80;
     height:80;
 }
 .resultbtn {
     width:100px;
     height:100px;
+}
+.ingcard {
+    flex-direction:row;
 }

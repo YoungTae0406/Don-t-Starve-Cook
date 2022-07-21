@@ -6,19 +6,19 @@
             <div class="container w-80 mt-3">
                 <div class="row justify-content-center">
                     <div class="col-2">
-                        <button type="button" class="btn btn-default border resultbtn" >ingredient1</button>
+                        <button type="button" id="ing1" class="btn btn-default border resultbtn" >ingredient1</button>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-default border resultbtn" >ingredient2</button>
+                        <button type="button" id="ing2" class="btn btn-default border resultbtn" >ingredient2</button>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-default border resultbtn" >ingredient3</button>
+                        <button type="button" id="ing3" class="btn btn-default border resultbtn" >ingredient3</button>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-default border resultbtn" >ingredient4</button>
+                        <button type="button" id="ing4" class="btn btn-default border resultbtn" >ingredient4</button>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-default border resultbtn" >result</button>
+                        <button type="button" id="result" class="btn btn-default border resultbtn" >result</button>
                     </div>
                 </div>
             </div>
@@ -26,19 +26,80 @@
             <div class="container w-80 px-3 my-5">
                 <div class="container">
                     <p>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingreList">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingMeatList">
                         고기재료
                     </button>
                     </p>
-                    <div class="collapse" id="ingreList">
-                        <div class="card card-body justify-content-center">
+                    <div class="collapse" id="ingMeatList">
+                        <div class="card card-body ingcard" >
                             {%for meat in meatsIngredient%}
-                            <button type="button" class="btm imgbutton d-block my-2 mx-2">
+                            <button type="button" class="btm ingbutton my-2 mx-3">
                                 <img class="imgae-rounded" width="60" height = "60" src="{{ meat.img.url }}" alt="">
                             </button>
                             {%endfor%}
                         </div>
                     </div>
+                    <br>
+                    <p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingVegList">
+                        채소재료
+                    </button>
+                    </p>
+                    <div class="collapse" id="ingVegList">
+                        <div class="card card-body ingcard" >
+                            {%for meat in meatsIngredient%}
+                            <button type="button" class="btm ingbutton my-2 mx-3">
+                                <img class="imgae-rounded" width="60" height = "60" src="{{ meat.img.url }}" alt="">
+                            </button>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingFruList">
+                        과일재료
+                    </button>
+                    </p>
+                    <div class="collapse" id="ingFruList">
+                        <div class="card card-body ingcard" >
+                            {%for meat in meatsIngredient%}
+                            <button type="button" class="btm ingbutton my-2 mx-3">
+                                <img class="imgae-rounded" width="60" height = "60" src="{{ meat.img.url }}" alt="">
+                            </button>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingSeafList">
+                        해산물재료
+                    </button>
+                    </p>
+                    <div class="collapse" id="ingSeafList">
+                        <div class="card card-body ingcard" >
+                            {%for meat in meatsIngredient%}
+                            <button type="button" class="btm ingbutton my-2 mx-3">
+                                <img class="imgae-rounded" width="60" height = "60" src="{{ meat.img.url }}" alt="">
+                            </button>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#ingEtcList">
+                        기타재료
+                    </button>
+                    </p>
+                    <div class="collapse" id="ingEtcList">
+                        <div class="card card-body ingcard" >
+                            {%for meat in meatsIngredient%}
+                            <button type="button" class="btm ingbutton my-2 mx-3">
+                                <img class="imgae-rounded" width="60" height = "60" src="{{ meat.img.url }}" alt="">
+                            </button>
+                            {%endfor%}
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
